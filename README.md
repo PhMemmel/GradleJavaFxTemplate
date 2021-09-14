@@ -6,11 +6,12 @@ including JUnit support and a JavaFX application.
 
 Different types of templates can be found in the different branches of this project:
 
-### main:
-Basic gradle project including JavaFX and JUnit support
-
-...more branches coming...
-
+- `main`:
+  Basic gradle project including JavaFX and JUnit support
+- `spotbugs_checkstyle_jacoco`:
+  Support for jacoco, checkstyle and spotbugs has been added compared to `main`: Run the "check"
+  gradle task to run all check tasks at once (junit, spotbugs, checkstyle, jacoco). Test reports
+  will be saved to the subdirectory `test-reports/`.
 
 ## 1. Running the project:
 Import a clone/fork of this project as a gradle project in IntelliJ or any other IDE.
@@ -31,8 +32,8 @@ That means that you *cannot* just build a normal jar of a JavaFX application and
 whereever you have a Java runtime environment.
 
 You have to somehow provide the JavaFX libraries separately which usually means you have to make your
-user download them separately and start the jar with the correct include command line options to 
-provide the correct library path which is - let's be honest - not what you want to do when you 
+user download them separately and start the jar with the correct include command line options to
+provide the correct library path which is - let's be honest - not what you want to do when you
 want to share your software.
 
 Another problem is the fact that JavaFX libraries are platform *dependent*. So you need different
@@ -46,7 +47,7 @@ Running the gradle task `javaFxJar` will create a so called fat jar in `build/li
 This gradle task analyzes your current operating system and architecture, downloads the correct
 JavaFX libraries, compiles your project, packages up the class files of this project and wraps it all up
 in a single fat jar file you can just run with a normal compatible JRE. So whoever wants to run this
-JavaFX application just has to install a JRE (should be at least Java 11) and then double 
+JavaFX application just has to install a JRE (should be at least Java 11) and then double
 click the jar file (on Windows, for example) or run it with `java -jar NAME_OF_JAR_FILE.jar`
 
 ### 3.3 Care
