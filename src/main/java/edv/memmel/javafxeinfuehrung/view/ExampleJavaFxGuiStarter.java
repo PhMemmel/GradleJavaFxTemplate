@@ -1,4 +1,4 @@
-package edv.memmel.example.view;
+package edv.memmel.javafxeinfuehrung.view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class ExampleJavaFxGuiStarter extends Application {
         new FXMLLoader(getClass().getResource("/MainWindow.fxml"));
     Parent root = fxmlLoader.load();
     primaryStage.setTitle("Hello World");
-    primaryStage.setScene(new Scene(root, 300, 275));
+    primaryStage.setScene(new Scene(root, 800, 600));
     primaryStage.show();
   }
 }

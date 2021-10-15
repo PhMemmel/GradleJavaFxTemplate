@@ -10,7 +10,7 @@ plugins {
 sourceCompatibility = 11
 targetCompatibility = 11
 
-def mainClassName = "edv.memmel.example.Main"
+def mainClassName = "edv.memmel.javafxeinfuehrung.Main"
 
 application {
     mainClass.set(mainClassName)
@@ -44,13 +44,13 @@ task javaFxJar(type: Jar) {
     //destinationDirectory = file("${rootDir}/releases")
     OperatingSystem operatingSystem = DefaultNativePlatform.currentOperatingSystem;
     if (operatingSystem.isWindows()) {
-        archiveBaseName = "example-win"
+        archiveBaseName = "JavaFxEinfuehrung-win"
     } else if (operatingSystem.isMacOsX()) {
-        archiveBaseName = "example-osx"
+        archiveBaseName = "JavaFxEinfuehrung-osx"
     } else if (operatingSystem.isLinux()) {
-        archiveBaseName = "example-linux"
+        archiveBaseName = "JavaFxEinfuehrung-linux"
     } else {
-        archiveBaseName = "example"
+        archiveBaseName = "JavaFxEinfuehrung"
     }
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE

@@ -1,6 +1,6 @@
-package edv.memmel.example;
+package edv.memmel.javafxeinfuehrung;
 
-import edv.memmel.example.view.ExampleJavaFxGuiStarter;
+import edv.memmel.javafxeinfuehrung.view.ExampleJavaFxGuiStarter;
 
 /**
  * Main starter class. Needed for properly building fat jar with JavaFX libraries included.
