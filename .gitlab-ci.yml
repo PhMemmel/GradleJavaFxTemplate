@@ -40,6 +40,11 @@ junit:
     paths:
       - 'test-reports/tests/test'
 
+spotless:
+  stage: test
+  script:
+    - ./gradlew spotlessJavaCheck
+
 checkstyle:app:
   stage: test
   script:

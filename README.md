@@ -11,7 +11,8 @@ Different types of templates can be found in the different branches of this proj
 - `spotbugs_checkstyle_jacoco`:
   Support for jacoco, checkstyle and spotbugs has been added compared to `main`: Run the "check"
   gradle task to run all check tasks at once (junit, spotbugs, checkstyle, jacoco). Test reports
-  will be saved to the subdirectory `test-reports/`.
+  will be saved to the subdirectory `test-reports/`. Also google java code style is being verified
+  by the spotless plugin
 
 ## 1. Running the project:
 Import a clone/fork of this project as a gradle project in IntelliJ or any other IDE.
